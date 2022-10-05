@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:layout_usuario/menu.dart';
+import 'package:layout_usuario/cartao_adaptativo.dart';
+import 'package:layout_usuario/cartao_responsivo.dart';
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized;
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitDown]);
   runApp(const MyApp());
 }
 
@@ -14,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Aplicativo Exemplo",
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: const Home(),
+      home: const CartaoResponsivo(),
     );
   }
 }
